@@ -1,0 +1,25 @@
+CREATE TABLE staging.stg_sales_transactions AS
+SELECT
+	CONCAT(order_id, product_id) AS sales_transaction_key,
+	order_id,
+	CAST(order_date AS DATE),
+	CAST(order_month AS INTEGER),
+	CAST(order_quarter AS INTEGER),
+	CAST(order_year AS INTEGER),
+	customer_id,
+	region,
+	province,
+	channel,
+	employee_id,
+	product_id,
+	product_category,
+	CAST(quantity AS INTEGER),
+	CAST(unit_price AS INTEGER),
+	CAST(discount_pct AS INTEGER),
+	CAST(discount_amount AS FLOAT),
+	CAST(gross_amount AS INTEGER),
+	CAST(net_amount AS FLOAT),
+	delivery_status,
+	payment_method,
+	payment_status
+FROM raw.sales_transactions;

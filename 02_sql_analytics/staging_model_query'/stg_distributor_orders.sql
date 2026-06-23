@@ -1,0 +1,25 @@
+CREATE TABLE staging.stg_distributor_orders AS
+SELECT
+	CONCAT(order_id, '_', product_id) AS distributor_order_key,
+	order_id,
+	CAST(order_date AS DATE),
+	CAST(order_month AS INTEGER),
+	CAST(order_quarter AS INTEGER),
+	distributor_id,
+	region,
+	channel,
+	product_id,
+	product_category,
+	CAST(qty_ordered AS INTEGER),
+	CAST(qty_delivered AS INTEGER),
+	CAST(fill_rate_pct AS FLOAT),
+	CAST(unit_price_list AS INTEGER),
+	CAST(distributor_price AS INTEGER),
+	CAST(gross_amount AS INTEGER),
+	CAST(delivered_amount AS INTEGER),
+	CAST(expected_delivery_date AS DATE),
+	CAST(actual_delivery_date AS DATE),
+	ontime_delivery,
+	delivery_status,
+	payment_terms
+FROM raw.distributor_orders;
