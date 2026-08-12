@@ -145,7 +145,7 @@ Before any cleaning, each of the 10 raw tables is profiled (`02_sql_analytics/pr
 | return_transactions | 3,665 | 0 | none |
 | promotion_program | 40 | 0 | none |
 
-**Key decisions from the profiling:**
+**Key decisions from the profiling:**\
 ✔️ `customer_master.tax_code` nulls are expected - a customer only has a tax code if they requested a tax invoice - so the field is kept as-is rather than imputed.\
 ✔️ `employee_master.resign_date` / `transfer_note` nulls are expected for active, non-transferred employees and don't affect analysis.\
 ✔️ `promotion_program.applicable_products` packs multiple product IDs into one cell, delimited by `|` - flagged for splitting/exploding into one row per product during staging.\
