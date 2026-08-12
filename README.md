@@ -104,7 +104,7 @@ Table 3: `employee_master` (SCD Type 2 source - role/region history)
 
 ### Entity Relationships
 
-
+![VietDist Entity Relationship Diagram](images/entity_relationship_diagram.png)
 
 ---
 
