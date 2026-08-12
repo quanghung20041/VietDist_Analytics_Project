@@ -6,7 +6,7 @@ _Building a Bronze → Silver → Gold data warehouse to consolidate 10 raw oper
 
 **+ Domain:** A consumer goods (FMCG) distribution company in Vietnam operating two sales channels - direct retail sales to customers and wholesale orders through third-party distributors - across multiple regions and provinces.
 
-Author: Hung Nguyen
+Author: Hung Nguyen\
 Tools Used: Python & SQL
 
 ---
