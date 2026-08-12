@@ -21,7 +21,6 @@ Tools Used: Python & SQL
 
 ## 📌 Background & Overview
 
-### Objective:
 ### 📖 What is this project about? What Business Question will it solve?
 
 This project builds an end-to-end data pipeline for VietDist. Ten heterogeneous raw source files - covering sales transactions, distributor orders, customers, products, distributors, employees, sales targets, territory mapping, returns, and promotions - are ingested, profiled, cleaned, and modeled into a star-schema warehouse so sales leadership can reliably answer: *"Are our sales reps hitting their monthly targets?"*
