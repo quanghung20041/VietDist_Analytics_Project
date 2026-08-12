@@ -1,4 +1,4 @@
-# 📊 VietDist Sales & Distribution Analytics Pipeline [ Sales-vs-Target Performance Tracking + FMCG Distribution | Python & SQL ]
+# 📊 VietDist Analytics Project
 
 _Building a Bronze → Silver → Gold data warehouse to consolidate 10 raw operational sources from VietDist - a Vietnamese FMCG distribution company - into a governed PostgreSQL warehouse for tracking sales performance against monthly targets._
 
